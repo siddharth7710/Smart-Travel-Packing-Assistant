@@ -1,0 +1,84 @@
+@import './variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-family-main);
+    background-color: skyblue;
+    color: var(--color-text-main);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+#root {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Classes */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-full);
+    /* Assuming logic, but using md for now */
+    border-radius: var(--radius-md);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+}
